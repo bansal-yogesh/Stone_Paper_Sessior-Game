@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stone Paper Scissors Game</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header id="header1">
+        Play Game
+    </header>
+    <div class="game-container">
+        <h1>Stone Paper Scissors Game</h1>
+        
+        <!-- Display the score -->
+        <div class="score-board">
+            <p>Your Score: <span id="player-score">0</span></p>
+            <p>Computer's Score: <span id="computer-score">0</span></p>
+        </div>
+
+        <div class="player-choice">
+            <h2>Your Choice:</h2>
+            <div class="choices">
+                <button class="choice" onclick="playerChoice('stone')">
+                    <img src="https://plus.unsplash.com/premium_photo-1679329750613-8bf65b386fa8?q=80&w=1887&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Stone">
+                    <p>Stone</p>
+                </button>
+                <button class="choice" onclick="playerChoice('paper')">
+                    <img src="https://plus.unsplash.com/premium_photo-1675695700239-44153e6bf430?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Paper">
+                    <p>Paper</p>
+                </button>
+                <button class="choice" onclick="playerChoice('scissors')">
+                    <img src="https://media.istockphoto.com/id/496410586/vector/scissors-icon.jpg?s=1024x1024&w=is&k=20&c=_p1Zh2WbWZQ-pBf3hB323ofP7ME6axHmz0ZqRE5A4IA=" alt="Scissors">
+                    <p>Scissors</p>
+                </button>
+            </div>
+        </div>
+        
+        <div class="result">
+            <h2>Result:</h2>
+            <p id="result-message">Choose your move!</p>
+        </div>
+
+        <div class="computer-choice">
+            <h2>Computer's Choice:</h2>
+            <p id="computer-choice-text">Computer is thinking...</p>
+        </div>
+
+        <!-- Restart button -->
+        <button id="restart-btn" onclick="restartGame()">Restart Game</button>
+    </div>
+    <footer>
+        <div>
+            Copyright &copy; Designed by Yogesh
+        </div>
+    </footer>
+    
+    <script src="script.js"></script>
+</body>
+</html>

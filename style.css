@@ -1,0 +1,104 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+#header1{
+background-color: black;
+color: brown;
+height: 20cm;
+width: 100vw;
+text-align: center;
+font-size: 2cm;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    flex-direction: column;
+}
+
+.game-container {
+    text-align: center;
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    width: 400px;
+}
+
+h1 {
+    margin-bottom: 20px;
+}
+
+.score-board {
+    margin-bottom: 20px;
+}
+
+.score-board p {
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.choices {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 20px;
+}
+
+.choice {
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+    padding: 10px;
+    text-align: center;
+}
+
+.choice img {
+    width: 100px;
+    height: 100px;
+    transition: transform 0.3s;
+}
+
+.choice img:hover {
+    transform: scale(1.1);
+}
+
+.result, .computer-choice {
+    margin-top: 20px;
+}
+
+#result-message, #computer-choice-text {
+    font-size: 18px;
+    font-weight: bold;
+}
+
+#restart-btn {
+    margin-top: 20px;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+}
+
+#restart-btn:hover {
+    background-color: #45a049;
+}
+
+footer{
+    background-color: black;
+    color: white;
+    height: 20cm;
+    width: 100vw;
+
+}
+footer div{
+    text-align: center;
+}
