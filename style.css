@@ -62,6 +62,9 @@ h1 {
     width: 100px;
     height: 100px;
     transition: transform 0.3s;
+    border-radius: 50%;
+    border: 1px solid black;
+    box-shadow: 0 0 6px green;
 }
 
 .choice img:hover {
